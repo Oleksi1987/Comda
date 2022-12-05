@@ -20,6 +20,7 @@ public class AddToCartCalendarTest extends BaseTest {
                 .clickAddToBundleButton()
                 .clickCustomizeYourCalendarsButton();
         calendarCustomizationPage
+                .clickHideBundleButton()
                 .clickNextStepButton()
                 .clickStartNewImprintButton()
                 .clickTextAndImageOption()
