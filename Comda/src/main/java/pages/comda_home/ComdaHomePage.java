@@ -16,6 +16,7 @@ public class ComdaHomePage extends BasePage {
     private final By Cookies = By.xpath("//a[@class = 'cc-btn cc-dismiss']");
     private final By Register = By.xpath("//li[@class = 'register-link']");
     private final By PromotionalCalendars = By.xpath("//div[@class = 'skip-content row']//li[@class = 'level0 nav-2 parent']");
+    private final By ApparelAndTshirts = By.xpath("//div[@class = 'skip-content row']//li[@class = 'level0 nav-4 parent']");
 
     public ComdaHomePage clickOnLogin() {
         driver.findElement(Login).click();
@@ -32,6 +33,10 @@ public class ComdaHomePage extends BasePage {
     }
     public ComdaHomePage clickOnPromotionalCalendarIcon() {
         driver.findElement(PromotionalCalendars).click();
+        return this;
+    }
+    public ComdaHomePage clickOnApparelAndTshirtsIcon() {
+        driver.findElement(ApparelAndTshirts).click();
         return this;
     }
 }

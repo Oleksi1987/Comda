@@ -8,17 +8,15 @@ import pages.base.BasePage;
 import static constants.Constant.Quantity.DEFAULT_QTY;
 
 public class CalendarPage extends BasePage {
+    JavascriptExecutor js = (JavascriptExecutor)driver;
     public CalendarPage(WebDriver driver) {
         super(driver);
 
     }
     private final By QTYField = By.xpath("//li[@class = 'item last calendar quick123499']//input[@class = 'input-text qty']");
     public CalendarPage insertQTY() {
-        JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("scrollBy(0, 300)");
-
         driver.findElement(QTYField).clear();
-
         driver.findElement(QTYField).sendKeys("150");
         return this;
     }

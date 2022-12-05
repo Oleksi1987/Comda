@@ -9,6 +9,7 @@ import static constants.Constant.Image.IMAGE;
 import static constants.Constant.Message.MESSAGE;
 
 public class CalendarCustomizationPage extends BasePage {
+    JavascriptExecutor js = (JavascriptExecutor)driver;
     public CalendarCustomizationPage(WebDriver driver) {
         super(driver);
     }
@@ -19,7 +20,6 @@ public class CalendarCustomizationPage extends BasePage {
     }
     private final By NextStepButton = By.xpath("//div[@class = 'item']//li[@class = 'prev_next_step_tabs_item next_step']");
     public CalendarCustomizationPage clickNextStepButton() {
-        JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("scrollBy(0, 200)");
         driver.findElement(NextStepButton).click();
         return this;
@@ -41,7 +41,6 @@ public class CalendarCustomizationPage extends BasePage {
     }
     private final By ChoseColorStep1 = By.xpath("//div[@class = 'imprint-color-wrapper']//span[@class = 'swatch-label']['black-imprint']");
     public CalendarCustomizationPage choseBlackColorOption() {
-        JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("scrollBy(0, 200)");
         driver.findElement(ChoseColorStep1).click();
         return this;
@@ -68,7 +67,6 @@ public class CalendarCustomizationPage extends BasePage {
     }
     private final By AddToCart = By.xpath("//div[@class = 'add-to-box']//div[@id = 'btn-add-to-cart']//span[contains (text(), 'Add to Cart')]");
     public CalendarCustomizationPage clickOnButtonAddToCart() {
-        JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("scrollBy(0, 350)");
         driver.findElement(AddToCart).click();
         return this;
