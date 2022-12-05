@@ -53,7 +53,7 @@ public class CalendarCustomizationPage extends BasePage {
     }
     private final By ChoseFile = By.xpath("//div[@class = 'div_step_item_3 div_step_warp']//div[@class = 'input-box']//input[@class = 'product-custom-option product-custom-option-123532 ']");
     public CalendarCustomizationPage uploadAnImage() {
-        driver.findElement(ChoseFile).sendKeys("src/main/resources/photo_5408991300897849748_y.jpg");
+        driver.findElement(ChoseFile).sendKeys("D:\\Comda\\Comda\\src\\main\\resources\\photo_5408991300897849748_y.jpg");
         return this;
     }
     private final By ImageColor = By.xpath("//div[@class = 'grouped-option color-input color-input-6 imprint-line active']//div[@class = 'swatch-selection']");
@@ -61,13 +61,15 @@ public class CalendarCustomizationPage extends BasePage {
         driver.findElement(ImageColor).click();
         return this;
     }
-    private final By ChoseColorStep2 = By.xpath("//div[@class = 'imprint-color-wrapper']//li[@class = 'swatch-item option-blue-imprint is-media']//span[@class = 'swatch-label']");
+    private final By ChoseColorStep2 = By.xpath("//div[@class = 'grouped-option color-input custom-color-input custom-color-input-6 imprint-line active']//div[@class = 'imprint-color-wrapper']//span[@class = 'swatch-label']");
     public CalendarCustomizationPage choseBlueColorOption() {
         driver.findElement(ChoseColorStep2).click();
         return this;
     }
-    private final By AddToCart = By.xpath("//div[@class = 'add-to-box']//button[@class = 'button add-to-cart-button disabled'][1]");
+    private final By AddToCart = By.xpath("//div[@class = 'add-to-box']//div[@id = 'btn-add-to-cart']//span[contains (text(), 'Add to Cart')]");
     public CalendarCustomizationPage clickOnButtonAddToCart() {
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("scrollBy(0, 350)");
         driver.findElement(AddToCart).click();
         return this;
     }

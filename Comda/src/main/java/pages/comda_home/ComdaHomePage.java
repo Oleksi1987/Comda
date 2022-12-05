@@ -15,7 +15,7 @@ public class ComdaHomePage extends BasePage {
     private final By Login = By.xpath("//a[text()='Log In']");
     private final By Cookies = By.xpath("//a[@class = 'cc-btn cc-dismiss']");
     private final By Register = By.xpath("//li[@class = 'register-link']");
-    private final By PromotionalCalendars = By.xpath("//div[@class = 'skip-content row']//*[@class = 'level0 nav-2 parent']");
+    private final By PromotionalCalendars = By.xpath("//div[@class = 'skip-content row']//li[@class = 'level0 nav-2 parent']");
 
     public ComdaHomePage clickOnLogin() {
         driver.findElement(Login).click();
