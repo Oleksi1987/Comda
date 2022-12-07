@@ -5,10 +5,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import pages.add_product_to_card.ApparelPage;
 import pages.add_product_to_card.CalendarPage;
 import pages.base.BasePage;
 import pages.comda_home.ComdaHomePage;
 import pages.login_page.LoginPage;
+import pages.product_customization_page.ApparelCustomizingPage;
 import pages.product_customization_page.CalendarCustomizationPage;
 import pages.register_page.RegisterPage;
 
@@ -26,6 +28,8 @@ public class BaseTest {
     protected RegisterPage registerPage = new RegisterPage(driver);
     protected CalendarPage calendarPage = new CalendarPage(driver);
     protected CalendarCustomizationPage calendarCustomizationPage = new CalendarCustomizationPage(driver);
+    protected ApparelPage apparelPage = new ApparelPage(driver);
+    protected ApparelCustomizingPage apparelCustomizingPage = new ApparelCustomizingPage(driver);
 
 
     @AfterTest
