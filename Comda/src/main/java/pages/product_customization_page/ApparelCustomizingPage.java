@@ -72,7 +72,7 @@ public class ApparelCustomizingPage extends BasePage {
         driver.findElement(ColorOptionStep1).click();
         return this;
     }
-    private final By ChoseColorStep1 = By.cssSelector("[alt='black-imprint']");
+    private final By ChoseColorStep1 = By.cssSelector("[data-select-value='2986343']");
     public ApparelCustomizingPage choseBlackColorOption() {
         js.executeScript("scrollBy(0, 200)");
         driver.findElement(ChoseColorStep1).click();
@@ -93,7 +93,7 @@ public class ApparelCustomizingPage extends BasePage {
         driver.findElement(ImageColor).click();
         return this;
     }
-    private final By ChoseColorStep2 = By.xpath("//div[@class = 'grouped-option color-input custom-color-input custom-color-input-6 imprint-line active']//span[@class = 'swatch-label']");
+    private final By ChoseColorStep2 = By.cssSelector("[data-select-value='2986415']");
     public ApparelCustomizingPage choseBrownColorOption() {
         driver.findElement(ChoseColorStep2).click();
         return this;
