@@ -7,11 +7,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.add_product_to_card.ApparelPage;
 import pages.add_product_to_card.CalendarPage;
+import pages.add_product_to_card.WritingInstrumentsPage;
 import pages.base.BasePage;
 import pages.comda_home.ComdaHomePage;
 import pages.login_page.LoginPage;
 import pages.product_customization_page.ApparelCustomizingPage;
 import pages.product_customization_page.CalendarCustomizationPage;
+import pages.product_customization_page.WritingInstrumentsCustomizingPage;
 import pages.register_page.RegisterPage;
 
 import javax.swing.*;
@@ -30,6 +32,8 @@ public class BaseTest {
     protected CalendarCustomizationPage calendarCustomizationPage = new CalendarCustomizationPage(driver);
     protected ApparelPage apparelPage = new ApparelPage(driver);
     protected ApparelCustomizingPage apparelCustomizingPage = new ApparelCustomizingPage(driver);
+    protected WritingInstrumentsPage writingInstrumentsPage = new WritingInstrumentsPage(driver);
+    protected WritingInstrumentsCustomizingPage writingInstrumentsCustomizingPage = new WritingInstrumentsCustomizingPage(driver);
 
 
     @AfterTest
