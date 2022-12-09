@@ -23,8 +23,13 @@ public class Constant {
     }
     public static class Message {
         public static final String MESSAGE = "Test";
+        public static final String MESSAGE2 = "Send Us Your Artwork After Ordering";
     }
     public static class Image {
         public static final String IMAGE = "src/main/resources/photo_5408991300897849748_y.jpg";
+    }
+    public static class PromoCode {
+        public static final String CORRECT_PROMO_CODE = "TRS10";
+        public static final String INCORRECT_PROMO_CODE = "TRS12";
     }
 }

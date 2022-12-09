@@ -7,16 +7,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.add_product_to_card.ApparelPage;
 import pages.add_product_to_card.CalendarPage;
+import pages.add_product_to_card.MorePage;
 import pages.add_product_to_card.WritingInstrumentsPage;
 import pages.base.BasePage;
-import pages.comda_home.ComdaHomePage;
+import pages.cart_page.CartPage;
+import pages.comda_home_page.ComdaHomePage;
 import pages.login_page.LoginPage;
 import pages.product_customization_page.ApparelCustomizingPage;
 import pages.product_customization_page.CalendarCustomizationPage;
+import pages.product_customization_page.MoreCustomizationPage;
 import pages.product_customization_page.WritingInstrumentsCustomizingPage;
 import pages.register_page.RegisterPage;
-
-import javax.swing.*;
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
 import static common.Config.HOLD_BROWSER_OPEN;
@@ -34,6 +35,9 @@ public class BaseTest {
     protected ApparelCustomizingPage apparelCustomizingPage = new ApparelCustomizingPage(driver);
     protected WritingInstrumentsPage writingInstrumentsPage = new WritingInstrumentsPage(driver);
     protected WritingInstrumentsCustomizingPage writingInstrumentsCustomizingPage = new WritingInstrumentsCustomizingPage(driver);
+    protected MorePage morePage = new MorePage(driver);
+    protected MoreCustomizationPage moreCustomizationPage = new MoreCustomizationPage(driver);
+    protected CartPage cartPage = new CartPage(driver);
 
 
     @AfterTest
