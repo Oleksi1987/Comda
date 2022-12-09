@@ -13,7 +13,7 @@ public class WritingInstrumentsPage extends BasePage {
     }
     private final By BeginCustomizingFieldWI = By.xpath("//li[@class = 'item last quick117333']//a[contains(text(), 'Begin Customizing')]");
     public WritingInstrumentsPage clickButtonBeginCustomize() {
-        js.executeScript("scrollBy(0, 300)");
+        js.executeScript("scrollBy(0, 400)");
         driver.findElement(BeginCustomizingFieldWI).click();
         return this;
     }

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
 import static constants.Constant.Quantity.DEFAULT_QTY;
+import static constants.Constant.TimeoutVariable.EXPLICIT_WAIT;
 
 public class CalendarPage extends BasePage {
     JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -15,7 +16,7 @@ public class CalendarPage extends BasePage {
     }
     private final By QTYField = By.xpath("//li[@class = 'item last calendar quick123499']//input[@class = 'input-text qty']");
     public CalendarPage insertQTY() {
-        js.executeScript("scrollBy(0, 300)");
+        js.executeScript("scrollBy(0, 700)");
         driver.findElement(QTYField).clear();
         driver.findElement(QTYField).sendKeys("150");
         return this;

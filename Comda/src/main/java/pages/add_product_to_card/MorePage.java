@@ -13,7 +13,7 @@ public class MorePage extends BasePage {
     }
     private final By BeginCustomizingFieldMore = By.xpath("//li[@class = 'item last quick107217']//a[contains(text(), 'Begin Customizing')]");
     public MorePage clickButtonBeginCustomize() {
-        js.executeScript("scrollBy(0, 300)");
+        js.executeScript("scrollBy(0, 400)");
         driver.findElement(BeginCustomizingFieldMore).click();
         return this;
     }
