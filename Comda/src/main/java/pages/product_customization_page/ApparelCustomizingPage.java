@@ -1,12 +1,12 @@
 package pages.product_customization_page;
 
-import org.checkerframework.checker.units.qual.A;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import pages.add_product_to_card.ApparelPage;
 import pages.base.BasePage;
 
+import static constants.Constant.Image.IMAGE;
 import static constants.Constant.Message.MESSAGE;
 
 public class ApparelCustomizingPage extends BasePage {
@@ -85,7 +85,7 @@ public class ApparelCustomizingPage extends BasePage {
     }
     private final By ChoseFile = By.xpath("//div[@class = 'div_step_item_3 div_step_warp']//div[@class = 'input-box']//input[@class = 'product-custom-option product-custom-option-126478 ']");
     public ApparelCustomizingPage uploadAnImage() {
-        driver.findElement(ChoseFile).sendKeys("D:\\Comda\\Comda\\src\\main\\resources\\photo_5408991300897849748_y.jpg");
+        driver.findElement(ChoseFile).sendKeys(IMAGE);
         return this;
     }
     private final By ImageColor = By.xpath("//div[@class = 'grouped-option color-input color-input-6 imprint-line active']//div[@class = 'swatch-selection']");

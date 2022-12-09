@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
+import static constants.Constant.Image.IMAGE;
 import static constants.Constant.Message.MESSAGE;
 
 public class WritingInstrumentsCustomizingPage extends BasePage {
@@ -59,7 +60,7 @@ public class WritingInstrumentsCustomizingPage extends BasePage {
     }
     private final By ChoseFile = By.cssSelector("[name = 'super-options_117331-660952_file']");
     public WritingInstrumentsCustomizingPage uploadAnImage() {
-        driver.findElement(ChoseFile).sendKeys("D:\\Comda\\Comda\\src\\main\\resources\\photo_5408991300897849748_y.jpg");
+        driver.findElement(ChoseFile).sendKeys(IMAGE);
         return this;
     }
     private final By ImageColor = By.xpath("//div[@class = 'grouped-option color-input color-input-4 imprint-line active']//div[@class = 'swatch-selection-wrapper small']");
