@@ -18,7 +18,7 @@ public class CalendarPage extends BasePage {
     public CalendarPage insertQTY() {
         js.executeScript("scrollBy(0, 700)");
         driver.findElement(QTYField).clear();
-        driver.findElement(QTYField).sendKeys("150");
+        driver.findElement(QTYField).sendKeys("1");
         return this;
     }
     private final By QTYPlusSelector = By.xpath("//li[@class = 'item last calendar quick123499']//span[@class = 'plus-qty']");
