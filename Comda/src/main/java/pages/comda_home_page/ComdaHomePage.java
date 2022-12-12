@@ -6,12 +6,10 @@ import pages.base.BasePage;
 
 public class ComdaHomePage extends BasePage {
 
-    public ComdaHomePage clickOnRegisterButton;
-
     public ComdaHomePage(WebDriver driver) {
         super(driver);
+    }
 
-            }
     private final By Login = By.xpath("//a[text()='Log In']");
     private final By Cookies = By.xpath("//a[@class = 'cc-btn cc-dismiss']");
     private final By Register = By.xpath("//li[@class = 'register-link']");

@@ -34,7 +34,6 @@ public class RegisterPage extends BasePage {
     public RegisterPage enterEmailAddress() {
         driver.findElement(EmailAddressField).sendKeys(EMAIL_ADDRESS);
         return this;
-
     }
     private final By PasswordField = By.id("password");
     public RegisterPage enterPassword() {
