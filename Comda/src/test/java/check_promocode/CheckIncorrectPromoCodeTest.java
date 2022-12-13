@@ -1,12 +1,11 @@
-package check_password;
+package check_promocode;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.Urls.COMDA_HOME_PAGE;
 
-public class CheckCorrectPasswordTest extends BaseTest {
-
+public class CheckIncorrectPromoCodeTest extends BaseTest {
     @Test
     public void morePage() {
         basePage
@@ -25,7 +24,7 @@ public class CheckCorrectPasswordTest extends BaseTest {
                 .clickOnButtonAddToCart()
                 .clickCartButton();
         cartPage
-                .insertCorrectPromoCode()
+                .insertIncorrectCorrectPromoCode()
                 .clickApplyCodeButton();
     }
 }

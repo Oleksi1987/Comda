@@ -1,4 +1,4 @@
-package add_to_cart;
+package login_to_website.add_to_cart;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;

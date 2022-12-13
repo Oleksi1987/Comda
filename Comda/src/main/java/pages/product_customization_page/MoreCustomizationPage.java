@@ -44,7 +44,6 @@ public class MoreCustomizationPage extends BasePage {
     }
     private final By AddToCart = By.xpath("//div[@class = 'add-to-box']//div[@id = 'btn-add-to-cart']//span[contains (text(), 'Add to Cart')]");
     public MoreCustomizationPage clickOnButtonAddToCart() {
-        js.executeScript("scrollBy(0, 350)");
         driver.findElement(AddToCart).click();
         return this;
     }

@@ -1,37 +1,33 @@
-package add_to_cart;
+package login_to_website.add_to_cart;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.Urls.COMDA_HOME_PAGE;
 
-public class AddToCartCalendarTest extends BaseTest {
+public class AddToCartWritingInstrumentsTest extends BaseTest {
 
     @Test
-    public void addToCartCalendar() {
+    public void writingInstrumentsPage() {
         basePage
                 .open(COMDA_HOME_PAGE);
         comdaHomePage
                 .clickOnCookiesButton()
-                .clickOnPromotionalCalendarIcon();
-        calendarPage
-                .insertQTY()
-                .clickPlusQTYButton()
-                .clickAddToBundleButton()
-                .clickCustomizeYourCalendarsButton();
-        calendarCustomizationPage
-                .clickHideBundleButton()
+                .clickOnWritingInstrumentsIcon();
+        writingInstrumentsPage
+                .clickButtonBeginCustomize();
+        writingInstrumentsCustomizingPage
                 .clickNextStepButton()
+                .clickPlusQty()
+                .clickNextStepButtonStep2()
                 .clickStartNewImprintButton()
                 .clickTextAndImageOption()
                 .clickColourStep1Option()
-                .choseBlackColorOption()
+                .choseGoldColorOption()
                 .insertMessageLine1()
                 .uploadAnImage()
                 .clickColourStep2Option()
-                .choseBlueColorOption()
+                .choseBurgundyColorOption()
                 .clickOnButtonAddToCart();
-
-
     }
 }
