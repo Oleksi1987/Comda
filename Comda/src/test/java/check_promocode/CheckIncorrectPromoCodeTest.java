@@ -7,7 +7,7 @@ import static constants.Constant.Urls.COMDA_HOME_PAGE;
 
 public class CheckIncorrectPromoCodeTest extends BaseTest {
     @Test
-    public void morePage() {
+    public void morePage() throws InterruptedException {
         basePage
                 .open(COMDA_HOME_PAGE);
         comdaHomePage

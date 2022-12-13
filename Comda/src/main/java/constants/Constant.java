@@ -16,7 +16,7 @@ public class Constant {
     }
     public static class Emails {
         public static final String EMAIL_ADDRESS_EXISTING = "yashchuk.o@softhousegroup.com";
-        public static final String EMAIL_ADDRESS = "yashchuk.o+1@softhousegroup.com";
+        public static final String EMAIL_ADDRESS = "yashchuk.o+2@softhousegroup.com";
     }
     public static class Quantity {
         public static final char DEFAULT_QTY = 150;

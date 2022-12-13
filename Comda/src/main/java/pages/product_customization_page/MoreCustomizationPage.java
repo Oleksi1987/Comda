@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import pages.add_product_to_card.WritingInstrumentsPage;
 import pages.base.BasePage;
 
+import java.time.Duration;
+
 import static constants.Constant.Message.MESSAGE2;
 
 public class MoreCustomizationPage extends BasePage {
@@ -16,19 +18,19 @@ public class MoreCustomizationPage extends BasePage {
     }
     private final By NextStepButton = By.xpath("//div[@class = 'item']//li[@class = 'prev_next_step_tabs_item next_step']");
     public MoreCustomizationPage clickNextStepButton() {
-        js.executeScript("scrollBy(0, 200)");
+        js.executeScript("scrollBy(0, 100)");
         driver.findElement(NextStepButton).click();
         return this;
     }
     private final By QtySelector = By.xpath("//div[@class = 'add-to-cart']//span[@class = 'plus-qty']");
     public MoreCustomizationPage clickPlusQty() {
-        js.executeScript("scrollBy(0, 150)");
+        js.executeScript("scrollBy(0, 100)");
         driver.findElement(QtySelector).click();
         return this;
     }
     private final By NextStep = By.xpath("//a[@class = 'item-name prev_next_step_tabs__link go_to_step_3']");
     public MoreCustomizationPage clickNextStepButtonStep2() {
-        js.executeScript("scrollBy(0, 200)");
+        js.executeScript("scrollBy(0, 100)");
         driver.findElement(NextStep).click();
         return this;
     }
@@ -43,12 +45,14 @@ public class MoreCustomizationPage extends BasePage {
         return this;
     }
     private final By AddToCart = By.xpath("//div[@class = 'add-to-box']//div[@id = 'btn-add-to-cart']//span[contains (text(), 'Add to Cart')]");
-    public MoreCustomizationPage clickOnButtonAddToCart() {
+    public MoreCustomizationPage clickOnButtonAddToCart() throws InterruptedException {
         driver.findElement(AddToCart).click();
+        Thread.sleep(3000);
         return this;
     }
     private final By Cart = By.xpath("//div[@class = 'inner-wrapper']//a[contains (text(), 'View Cart & Check Out')]");
     public MoreCustomizationPage clickCartButton() {
+
         driver.findElement(Cart).click();
         return this;
     }
