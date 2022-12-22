@@ -11,7 +11,7 @@ public class WritingInstrumentsPage extends BasePage {
     public WritingInstrumentsPage(WebDriver driver) {
         super(driver);
     }
-    private final By BeginCustomizingFieldWI = By.xpath("//li[@class = 'item last quick117333']//a[contains(text(), 'Begin Customizing')]");
+    private final By BeginCustomizingFieldWI = By.xpath("//li[@class = 'item last quick123107']//a[contains(text(), 'Begin Customizing')]");
     public WritingInstrumentsPage clickButtonBeginCustomize() {
         js.executeScript("scrollBy(0, 400)");
         driver.findElement(BeginCustomizingFieldWI).click();

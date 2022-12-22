@@ -47,7 +47,7 @@ public class WritingInstrumentsCustomizingPage extends BasePage {
         driver.findElement(ColorOptionStep1).click();
         return this;
     }
-    private final By ChoseColorStep1 = By.cssSelector("[data-select-value='3004351']");
+    private final By ChoseColorStep1 = By.cssSelector("[data-select-value='3085867']");
     public WritingInstrumentsCustomizingPage choseGoldColorOption() {
         js.executeScript("scrollBy(0, 200)");
         driver.findElement(ChoseColorStep1).click();
