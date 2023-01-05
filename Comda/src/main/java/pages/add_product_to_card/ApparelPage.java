@@ -12,7 +12,7 @@ public class ApparelPage extends BasePage {
         super(driver);
 
     }
-    private final By BeginCustomizingField = By.xpath("//li[@class = 'item last quick126479']//a[@class = 'begin_customizing_btn']");
+    private final By BeginCustomizingField = By.xpath("//li[@class = 'item odd quick126479']//div[@class = 'product_item_buttons']");
     public ApparelPage clickButtonBeginCustomize() {
         js.executeScript("scrollBy(0, 400)");
         driver.findElement(BeginCustomizingField).click();

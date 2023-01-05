@@ -14,19 +14,19 @@ public class CalendarPage extends BasePage {
         super(driver);
 
     }
-    private final By QTYField = By.xpath("//li[@class = 'item last calendar quick123499']//input[@class = 'input-text qty']");
+    private final By QTYField = By.xpath("//li[@class = 'item last calendar quick123511']//input[@class = 'input-text qty']");
     public CalendarPage insertQTY() {
-        js.executeScript("scrollBy(0, 700)");
+        js.executeScript("scrollBy(0, 2700)");
         driver.findElement(QTYField).clear();
         driver.findElement(QTYField).sendKeys("1");
         return this;
     }
-    private final By QTYPlusSelector = By.xpath("//li[@class = 'item last calendar quick123499']//span[@class = 'plus-qty']");
+    private final By QTYPlusSelector = By.xpath("//li[@class = 'item last calendar quick123511']//span[@class = 'plus-qty']");
     public CalendarPage clickPlusQTYButton() {
         driver.findElement(QTYPlusSelector).click();
         return this;
     }
-    private final By AddToBundle = By.xpath("//li[@class = 'item last calendar quick123499']//button[@class = 'add-to-pack button']");
+    private final By AddToBundle = By.xpath("//li[@class = 'item last calendar quick123511']//button[@class = 'add-to-pack button']");
     public CalendarPage clickAddToBundleButton() {
         driver.findElement(AddToBundle).click();
         return this;
