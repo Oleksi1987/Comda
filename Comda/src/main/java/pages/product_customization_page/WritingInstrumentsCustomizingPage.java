@@ -53,22 +53,22 @@ public class WritingInstrumentsCustomizingPage extends BasePage {
         driver.findElement(ChoseColorStep1).click();
         return this;
     }
-    private final By InsertMessageStep1 = By.cssSelector("[id = 'super_options_117331_660943']");
+    private final By InsertMessageStep1 = By.cssSelector("[id = 'super_options_123106_688234']");
     public WritingInstrumentsCustomizingPage insertMessageLine1() {
         driver.findElement(InsertMessageStep1).sendKeys(MESSAGE);
         return this;
     }
-    private final By ChoseFile = By.cssSelector("[name = 'super-options_117331-660952_file']");
+    private final By ChoseFile = By.cssSelector("[name = 'super-options_123106-688243_file']");
     public WritingInstrumentsCustomizingPage uploadAnImage() {
         driver.findElement(ChoseFile).sendKeys(IMAGE);
         return this;
     }
-    private final By ImageColor = By.xpath("//div[@class = 'grouped-option color-input color-input-4 imprint-line active']//div[@class = 'swatch-selection-wrapper small']");
+    private final By ImageColor = By.xpath("//div[@class = 'grouped-option color-input color-input-4 imprint-line inactive']//div[@class = 'swatch-selection']");
     public WritingInstrumentsCustomizingPage clickColourStep2Option() {
         driver.findElement(ImageColor).click();
         return this;
     }
-    private final By ChoseColorStep2 = By.cssSelector("[data-select-value='3004435']");
+    private final By ChoseColorStep2 = By.cssSelector("[data-select-value='3085912']");
     public WritingInstrumentsCustomizingPage choseBurgundyColorOption() {
         driver.findElement(ChoseColorStep2).click();
         return this;
