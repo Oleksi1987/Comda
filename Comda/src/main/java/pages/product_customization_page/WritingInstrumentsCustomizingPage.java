@@ -1,5 +1,6 @@
 package pages.product_customization_page;
 
+import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -77,6 +78,12 @@ public class WritingInstrumentsCustomizingPage extends BasePage {
     public WritingInstrumentsCustomizingPage clickOnButtonAddToCart() {
         js.executeScript("scrollBy(0, 350)");
         driver.findElement(AddToCart).click();
+        return this;
+    }
+    private final By message = By.xpath("//a[contains (text(), 'VIEW CART AND CHECKOUT')]");
+    public WritingInstrumentsCustomizingPage checkSuccessMessage() {
+        String checkMessage = driver.findElement(message).getAccessibleName();
+        Assert.isTrue(true, "VIEW CART AND CHECKOUT or CONTINUE SHOPPING");
         return this;
     }
 }

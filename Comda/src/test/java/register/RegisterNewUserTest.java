@@ -20,6 +20,8 @@ public class RegisterNewUserTest extends BaseTest {
                 .enterPassword()
                 .enterConfirmPassword()
                 .clickRegisterButton();
+        accountDashboardPage
+                .checkSuccessMessageForRegister();
 
     }
 }

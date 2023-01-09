@@ -26,6 +26,7 @@ public class CheckCorrectPromoCodeTest extends BaseTest {
                 .clickCartButton();
         cartPage
                 .insertCorrectPromoCode()
-                .clickApplyCodeButton();
+                .clickApplyCodeButton()
+                .checkSuccessMessage();
     }
 }

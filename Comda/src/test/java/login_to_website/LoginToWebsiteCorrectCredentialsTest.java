@@ -19,7 +19,8 @@ public class LoginToWebsiteCorrectCredentialsTest extends BaseTest {
                 .enterLogin()
                 .enterPassword()
                 .clickButtonLogin();
-
+        accountDashboardPage
+                .checkSuccessMessageForLogin();
     }
 
 }

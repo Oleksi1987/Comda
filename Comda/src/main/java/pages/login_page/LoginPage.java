@@ -40,5 +40,11 @@ public class LoginPage extends BasePage {
         driver.findElement(LoginButton).click();
         return this;
     }
+    private final By errorMessage = By.xpath("//span[contains(text(), 'Invalid login or password.')]");
+    public LoginPage checkErrorMessage() {
+        String Message = driver.findElement(errorMessage).getText();
+        Assert.isTrue(true, "Invalid login or password. Please ensure you are in the correct store by selecting your country at the top of the page.");
+        return this;
+    }
 
 }

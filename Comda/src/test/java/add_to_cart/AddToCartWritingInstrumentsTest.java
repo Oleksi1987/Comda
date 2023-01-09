@@ -28,6 +28,7 @@ public class AddToCartWritingInstrumentsTest extends BaseTest {
                 .uploadAnImage()
                 .clickColourStep2Option()
                 .choseBurgundyColorOption()
-                .clickOnButtonAddToCart();
+                .clickOnButtonAddToCart()
+                .checkSuccessMessage();
     }
 }

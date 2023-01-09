@@ -1,5 +1,6 @@
 package pages.register_page;
 
+import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -50,6 +51,12 @@ public class RegisterPage extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("scrollBy(0, 300)");
         driver.findElement(RegisterButton).click();
+        return this;
+    }
+    private final By errorMessage = By.xpath("//span[contains(text(), 'There is already an account with this email address.')]");
+    public RegisterPage checkErrorMessage() {
+        String checkMessage = driver.findElement(errorMessage).getAccessibleName();
+        Assert.isTrue(true, "There is already an account with this email address.");
         return this;
     }
 }

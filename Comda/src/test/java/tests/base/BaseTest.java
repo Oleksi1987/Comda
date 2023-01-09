@@ -13,6 +13,7 @@ import pages.base.BasePage;
 import pages.cart_page.CartPage;
 import pages.comda_home_page.ComdaHomePage;
 import pages.login_page.LoginPage;
+import pages.my_account_page.AccountDashboardPage;
 import pages.product_customization_page.ApparelCustomizingPage;
 import pages.product_customization_page.CalendarCustomizationPage;
 import pages.product_customization_page.MoreCustomizationPage;
@@ -38,6 +39,7 @@ public class BaseTest {
     protected MorePage morePage = new MorePage(driver);
     protected MoreCustomizationPage moreCustomizationPage = new MoreCustomizationPage(driver);
     protected CartPage cartPage = new CartPage(driver);
+    protected AccountDashboardPage accountDashboardPage = new AccountDashboardPage(driver);
 
 
     @AfterTest

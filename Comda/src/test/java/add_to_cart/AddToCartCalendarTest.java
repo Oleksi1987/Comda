@@ -30,8 +30,7 @@ public class AddToCartCalendarTest extends BaseTest {
                 .uploadAnImage()
                 .clickColourStep2Option()
                 .choseBlueColorOption()
-                .clickOnButtonAddToCart();
-
-
+                .clickOnButtonAddToCart()
+                .checkSuccessMessage();
     }
 }

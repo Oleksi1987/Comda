@@ -39,6 +39,7 @@ public class AddToCartApparelTest extends BaseTest {
                 .uploadAnImage()
                 .clickColourStep2Option()
                 .choseBrownColorOption()
-                .clickOnButtonAddToCart();
+                .clickOnButtonAddToCart()
+                .checkSuccessMessage();
     }
 }

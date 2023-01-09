@@ -19,7 +19,7 @@ public class RegisterExistingUserTest extends BaseTest {
                 .enterExistingEmailAddress()
                 .enterPassword()
                 .enterConfirmPassword()
-                .clickRegisterButton();
-
+                .clickRegisterButton()
+                .checkErrorMessage();
     }
 }
