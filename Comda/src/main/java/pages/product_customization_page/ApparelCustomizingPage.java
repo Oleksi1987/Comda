@@ -17,7 +17,7 @@ public class ApparelCustomizingPage extends BasePage {
     }
     private final By NextStepButton = By.xpath("//div[@class = 'item']//li[@class = 'prev_next_step_tabs_item next_step']");
     public ApparelCustomizingPage clickNextStepButton() {
-        js.executeScript("scrollBy(0, 200)");
+        js.executeScript("scrollBy(0, 400)");
         driver.findElement(NextStepButton).click();
         return this;
     }
@@ -106,7 +106,8 @@ public class ApparelCustomizingPage extends BasePage {
         return this;
     }
     private final By message = By.xpath("//a[contains (text(), 'VIEW CART AND CHECKOUT')]");
-    public ApparelCustomizingPage checkSuccessMessage() {
+    public ApparelCustomizingPage checkSuccessMessage() throws InterruptedException {
+        Thread.sleep(20000);
         String checkMessage = driver.findElement(message).getAccessibleName();
         Assert.isTrue(true, "VIEW CART AND CHECKOUT or CONTINUE SHOPPING");
         return this;

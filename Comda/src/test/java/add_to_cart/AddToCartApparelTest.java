@@ -8,7 +8,7 @@ import static constants.Constant.Urls.COMDA_HOME_PAGE;
 public class AddToCartApparelTest extends BaseTest {
 
     @Test
-    public void apparelCustomizingPage() {
+    public void apparelCustomizingPage() throws InterruptedException {
         basePage
                 .open(COMDA_HOME_PAGE);
         comdaHomePage

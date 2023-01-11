@@ -52,7 +52,6 @@ public class MoreCustomizationPage extends BasePage {
     }
     private final By Cart = By.xpath("//div[@class = 'inner-wrapper']//a[contains (text(), 'View Cart & Check Out')]");
     public MoreCustomizationPage clickCartButton() {
-
         driver.findElement(Cart).click();
         return this;
     }
