@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.qameta.allure' version '2.10.0'
+    id 'io.qameta.allure' version '2.11.0'
 }
 
 group 'org.example'
@@ -20,4 +20,10 @@ dependencies {
 
 test {
     useTestNG()
+}
+tasks{
+    task('localAllureServe', type: Exec, group: 'verification') {
+        executable './gradlew.bat'
+        args "allureServe", "--host", "localhost"
+    }
 }
